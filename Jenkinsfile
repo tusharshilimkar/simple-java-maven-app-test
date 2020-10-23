@@ -2,7 +2,6 @@ pipeline {
   agent {
     node {
         label 'master'
-        customWorkspace '/var/lib/jenkins/'
        }
     }
   stages {
