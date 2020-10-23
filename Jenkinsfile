@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+        label 'master'
+        customWorkspace '/var/lib/jenkins/'
+       }
+    }
   stages {
     stage('build') {
       steps {
