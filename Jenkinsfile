@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-         sh 'echo $USER'       
+         sh 'echo $USER'  
+         sh 'echo $PATH'
       }
     }
 
